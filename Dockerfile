@@ -12,4 +12,4 @@ RUN set -x \
 
 EXPOSE 9300 9200
 
-CMD ["elasticsearch", "-Des.cluster.name=metadata", "-Des.network.host=0.0.0.0", "-Des.threadpool.bulk.queue_size=20000", "-Des.action.auto_create_index=false", "-Des.index.mapper.dynamic=false"]
+CMD ["elasticsearch", "-Des.network.host=0.0.0.0", "-Des.threadpool.bulk.queue_size=20000", "-Des.action.auto_create_index=false", "-Des.index.mapper.dynamic=false"]
